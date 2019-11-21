@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Api Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" >
+</head>
+<body onload="sports()">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">News Everyday</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+          <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">News <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tech.html">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./health.html">Health</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./science.html">Science</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled"  tab-index="-1">Dark Mode</a>
+             </li>
+            <li>
+                <div class="toggle-container">
+                  
+                    <input type="checkbox" id="switch" name="theme" /> <label for="switch">Toggle</label>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="home-page">
+        <div id="particles-js"></div>
+      <div class="container">
+        <div class="row">
+        <div class="col col-lg-5 col-md-12 col-sm-5">
+          <div class="text">
+            <h1 class="text-center mt-5 pt-5" id="news-head">
+                
+            </h1>
+            <p class="text-center">
+              The Only news webappp that matters
+            </p>
+            <p class="text-left">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis nam doloremque vel asperiores, quasi, possimus recusandae ullam ipsum sint quam aliquid aut dolores eligendi rem voluptatibus! Cumque autem quo nisi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat odio magnam ipsam enim, suscipit tempore natus. Soluta, inventore aut minus, voluptatum voluptate ut, distinctio nobis perspiciatis est quos officia ad!
+            </p>
+            <div class="buttons">
+              <div class="btn btn-primary">
+              <a href="#" >
+                Headlines
+              </a>
+            </div>
+            <div class="btn btn-primary">
+                <a href="#" >
+                  Headlines
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col col-lg-5 col-sm-5 col-md-7 mx-auto ml-5">
+            <div class="image ml-5 my-5">
+                <img src="./front.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conatiner">
+        <div class="heading">
+            <div class="text-center">
+                <h1>
+                    Top Headlines
+                </h1>
+                <p>
+                    Read all the top headlines from the top sources
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-sm-10 mx-auto my-5">
+              <input type="text"  placeholder="Search your topic here">
+              <button onclick="anything()" class="btn btn-mat">
+                Search
+              </button>
+                <div id="news"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 text-center my-5">
+                    <i class="fa fa-code"></i> and <i class="fa fa-paint-brush"></i> by <a href="https://prerna2-9.github.io">&nbsp;Prerna Bajaj</a>
+                    <br>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/6.0.3/typeit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/dark.js"></script>
+    <script>
+      new TypeIt('#news-head', {
+        speed: 100,
+        startDelay: 900,
+        cursor:'',
+        loop:true
+      })
+      .type('News Everyday')
+      .pause(300)
+      .options({speed: 200, deleteSpeed: 75})
+      .go();
+    </script>
+    <script>
+      particlesJS.load('particles-js', './particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
+
+</body>
+</html>
